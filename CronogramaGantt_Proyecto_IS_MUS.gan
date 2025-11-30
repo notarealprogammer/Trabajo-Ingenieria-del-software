@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Mus - Fases corregido" company="" webLink="" view-date="2026-01-05" view-index="0" gantt-divider-location="299" resource-divider-location="300" version="3.3.3316" locale="es_ES">
+<?xml version="1.0" encoding="UTF-8"?><project name="Mus - Fases corregido" company="" webLink="" view-date="2025-10-27" view-index="0" gantt-divider-location="299" resource-divider-location="300" version="3.3.3316" locale="es_ES">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Nombre" width="170" order="0"/>
@@ -9,7 +9,7 @@
         <option id="filter.dueTodayTasks" value="false"/>
         <option id="filter.overdueTasks" value="false"/>
         <option id="filter.inProgressTodayTasks" value="false"/>
-        <option id="color.recent"><![CDATA[#f4f4f4 #99ff99 #ff9933 #ff6666]]></option>
+        <option id="color.recent"><![CDATA[#ffcc33 #f4f4f4 #99ff99 #ff9933 #ff6666]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Nombre" width="210" order="0"/>
@@ -39,8 +39,9 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="1" uid="b6e4f9add3b14321b47b03bd977bd362" name="Fase 1: Análisis" meeting="false" start="2025-11-24" duration="21" complete="0" expand="true">
+        <task id="1" uid="b6e4f9add3b14321b47b03bd977bd362" name="Fase 1: Análisis" meeting="false" start="2025-11-24" duration="34" complete="0" expand="true">
             <depend id="2" type="2" difference="0" hardness="Strong"/>
+            <depend id="19" type="2" difference="0" hardness="Strong"/>
             <task id="8" uid="5d3d1285bb0246a2814e87d7030e5be1" name="Recoger requisitos" meeting="false" start="2025-11-24" duration="7" complete="0" expand="true">
                 <depend id="7" type="2" difference="0" hardness="Strong"/>
             </task>
@@ -49,47 +50,67 @@
             </task>
             <task id="13" uid="a2a529875fbe463d8b8175ae35900990" name="Casos de uso básicos" meeting="false" start="2025-12-08" duration="7" complete="0" expand="true">
                 <depend id="9" type="2" difference="0" hardness="Strong"/>
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
             </task>
+            <task id="22" uid="32edac4bcebc43bf95a560f31cd55f7c" name="Gestión de riesgos" meeting="false" start="2025-12-15" duration="13" complete="0" expand="true"/>
         </task>
-        <task id="2" uid="44f81709a2564485853753de1b09d5e5" name="Fase 2: Diseño" meeting="false" start="2025-12-15" duration="14" complete="0" expand="true">
+        <task id="2" uid="44f81709a2564485853753de1b09d5e5" name="Fase 2: Diseño" meeting="false" start="2025-12-28" duration="14" complete="0" expand="true">
             <depend id="3" type="2" difference="0" hardness="Strong"/>
             <depend id="14" type="2" difference="0" hardness="Strong"/>
             <depend id="15" type="2" difference="0" hardness="Strong"/>
-            <task id="9" uid="f46591033e4045e290835ec06bbbb998" name="Arquitectura general" meeting="false" start="2025-12-15" duration="7" complete="0" expand="true">
+            <task id="9" uid="f46591033e4045e290835ec06bbbb998" name="Arquitectura general" meeting="false" start="2025-12-28" duration="7" complete="0" expand="true">
                 <depend id="10" type="2" difference="0" hardness="Strong"/>
                 <depend id="11" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="12" uid="bf1e16e16da74375a9eaf74485c09b16" name="seleccion de tecnología" meeting="false" start="2025-12-16" duration="1" complete="0" expand="true">
+            <task id="12" uid="bf1e16e16da74375a9eaf74485c09b16" name="seleccion de tecnología" meeting="false" start="2025-12-28" duration="1" complete="0" expand="true">
                 <depend id="10" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="11" uid="dbbd4fdc8ed241cfa0426a524aedc7d5" name="Diagramas de caso de uso UML" meeting="false" start="2025-12-22" duration="5" complete="0" expand="true"/>
-            <task id="10" uid="ebc309ac4b74499e821e7c5058bbe9b1" name="Prototipos de interfaz" meeting="false" start="2025-12-22" duration="7" complete="0" expand="true"/>
+            <task id="11" uid="dbbd4fdc8ed241cfa0426a524aedc7d5" name="Diagramas de caso de uso UML" meeting="false" start="2026-01-04" duration="5" complete="0" expand="true"/>
+            <task id="10" uid="ebc309ac4b74499e821e7c5058bbe9b1" name="Prototipos de interfaz" meeting="false" start="2026-01-04" duration="7" complete="0" expand="true"/>
         </task>
-        <task id="3" uid="826fdecb73b4417a9fbc209906382d0e" name="Fase 3: Desarrollo" meeting="false" start="2025-12-29" duration="48" complete="0" expand="true">
+        <task id="3" uid="826fdecb73b4417a9fbc209906382d0e" name="Fase 3: Desarrollo" color="#ffcc33" meeting="false" start="2026-01-11" duration="72" complete="0" expand="true">
             <depend id="4" type="2" difference="0" hardness="Strong"/>
-            <task id="14" uid="6620bb3cd8164b56bd51fdf0032d8032" name="Modulo 1: introduccion de manos" meeting="false" start="2025-12-29" duration="10" complete="0" priority="2" expand="true">
+            <task id="14" uid="6620bb3cd8164b56bd51fdf0032d8032" name="Modulo 1: introduccion de manos" meeting="false" start="2026-01-11" duration="10" complete="0" priority="2" expand="true">
                 <depend id="17" type="2" difference="0" hardness="Strong"/>
                 <depend id="18" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="15" uid="89b9a42d50f24319a0b57a2f26200f31" name="Modulo 2: Motor de recomendacion (por MonteCarlo)" meeting="false" start="2025-12-29" duration="23" complete="0" expand="true">
+            <task id="15" uid="89b9a42d50f24319a0b57a2f26200f31" name="Modulo 2: Motor de recomendacion (por MonteCarlo)" meeting="false" start="2026-01-11" duration="27" complete="0" expand="true">
                 <depend id="16" type="2" difference="0" hardness="Strong"/>
                 <depend id="18" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="16" uid="036da0d3e2334026bf4994dcd66756a5" name="Modulo 3: Modo de entrenamiento" meeting="false" start="2026-01-21" duration="10" complete="0" expand="true">
+            <task id="16" uid="036da0d3e2334026bf4994dcd66756a5" name="Modulo 3: Modo de entrenamiento" meeting="false" start="2026-02-07" duration="20" complete="0" expand="true">
                 <depend id="18" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="17" uid="d0353b7695dc437fbdcc316c5e9a1e54" name="Modulo 4: Panel de estadísticas" meeting="false" start="2026-01-08" duration="10" complete="0" expand="true">
+            <task id="17" uid="d0353b7695dc437fbdcc316c5e9a1e54" name="Modulo 4: Panel de estadísticas" meeting="false" start="2026-01-21" duration="10" complete="0" expand="true">
                 <depend id="18" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="18" uid="faf44a357a854222b3e6be5eaba481cb" name="Unión de módulos" meeting="false" start="2026-01-31" duration="15" complete="0" expand="true"/>
+            <task id="18" uid="faf44a357a854222b3e6be5eaba481cb" name="Unión de módulos" meeting="false" start="2026-02-27" duration="25" complete="0" expand="true"/>
         </task>
-        <task id="4" uid="4a89bb59d3924729af37b2b15d91cbc8" name="Fase 4: Pruebas y Optimización" color="#99ff99" meeting="false" start="2026-02-15" duration="28" complete="0" expand="true">
+        <task id="4" uid="4a89bb59d3924729af37b2b15d91cbc8" name="Fase 4: Pruebas y Optimización" color="#99ff99" meeting="false" start="2026-03-24" duration="39" complete="0" expand="true">
             <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <task id="19" uid="d627f5948c5d4c8d9893dc0dc4ec7140" name="Plan de pruebas" meeting="false" start="2026-03-24" duration="7" complete="0" expand="true">
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" uid="d64f1be91e4d43fcbfdd127063a6fd89" name="Pruebas de usabilidad y resultado de pruebas" meeting="false" start="2026-03-31" duration="20" complete="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" uid="48141a11b99d4b34aaf4831082141822" name="Validación de isDone / requisitos" meeting="false" start="2026-04-20" duration="12" complete="0" expand="true"/>
         </task>
-        <task id="5" uid="d29bca58ebd54527bd73d28ba49898dd" name="Fase 5: Documentación y Empaquetado" color="#ff9933" meeting="false" start="2026-03-15" duration="14" complete="0" expand="true">
+        <task id="5" uid="d29bca58ebd54527bd73d28ba49898dd" name="Fase 5: Documentación y Empaquetado" color="#ff9933" meeting="false" start="2026-05-02" duration="21" complete="0" expand="true">
             <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <task id="23" uid="53729ad75bed4ffb80684be449046d68" name="Documento con resultado de las pruebas" meeting="false" start="2026-05-02" duration="6" complete="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" uid="13e99324bba6444ea3f2e85ca27fa58e" name="Manual técnico del motor MonteCarlo para recomendaciones" meeting="false" start="2026-05-02" duration="11" complete="0" expand="true">
+                <depend id="24" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="24" uid="449f39943e0f4f96b5c45fe8294c5b40" name="Manual de usuario final" meeting="false" start="2026-05-13" duration="10" complete="0" expand="true"/>
+            <task id="26" uid="dab82499c2564d7db54ca41bc5ede124" name="Gestión de riesgos recopilación y aprendizaje" meeting="false" start="2026-05-08" duration="7" complete="0" expand="true"/>
         </task>
-        <task id="6" uid="2879853d7ca64e03914fcfccafd6d8a6" name="Fase 6: Presentación y Cierre" color="#ff6666" meeting="false" start="2026-03-29" duration="7" complete="0" expand="true"/>
+        <task id="6" uid="2879853d7ca64e03914fcfccafd6d8a6" name="Fase 6: Presentación y Cierre" color="#ff6666" meeting="false" start="2026-05-23" duration="7" complete="0" expand="true">
+            <task id="28" uid="4fec5ce1a0cd4e0694a8ecc863da2797" name="Ronda Inversión" meeting="false" start="2026-05-23" duration="7" complete="0" expand="true"/>
+            <task id="27" uid="45a2b4295e8d4086b1d6da671d155971" name="Soporte a Usuarios" meeting="false" start="2026-05-23" duration="7" complete="0" expand="true"/>
+        </task>
     </tasks>
     <resources>
         <resource id="4" name="Saúl" function="Default:0" contacts="" phone=""/>
